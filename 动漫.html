@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>动漫</title>
+<style type="text/css">
+	body{
+	background: #ccc;
+	background-image: url("images/动漫/背景/背景 (1).jpg");
+	background-size:cover;
+}
+	.content{
+	/*盒子宽度为960*/
+	width: 960px;
+	/*盒子高度为450,如果注释掉则会根据内容高度自适应*/
+	height: 450px;
+	/*上下外边距为60，左右外边距自适应，会居中*/
+	margin: 60px auto;
+}
+
+/*设置每个pic的宽度为150*/
+.pic{
+	/*为了能够让放大的照片在最上面*/
+	position: relative;
+	width: 150px;
+}
+
+.content img{
+	/*顶部内边距 左右内边距 底部内边距*/
+	padding: 10px 10px 10px;
+	/*颜色*/
+	background: white;
+	/*阴影左移5，下移5，虚化3，颜色和透明度*/
+	box-shadow: 5px 5px 3px rgba(50,50,50,0.4);
+	/*最后添加过度效果*/
+	transition: 0.5s;
+}
+
+/*设置每张图片的倾斜角度*/
+.pic1{
+	transform: rotate(-5deg);
+}
+
+.pic2{
+	transform: rotate(5deg);
+}
+
+.pic3{
+	transform: rotate(-10deg);
+}
+
+.pic4{
+	transform: rotate(-5deg);
+}
+
+.pic5{
+	transform: rotate(10deg);
+}
+
+.pic6{
+	transform: rotate(5deg);
+}
+
+.pic7{
+	transform: rotate(-5deg);
+}
+
+.pic8{
+	transform: rotate(0deg);
+}
+
+.pic9{
+	transform: rotate(5deg);
+}
+
+/*添加鼠标事件*/
+.content img:hover{
+	/*旋转角度*/
+	transform: rotate(0deg) scale(1.5);
+	/*旋转后阴影加深*/
+	box-shadow: 5px 5px 3px rgba(50,50,50,1);
+	/*保证旋转图片在最上面一层*/
+	z-index: 99;
+}
+
+</style>
+</head>
+
+
+		<div class="content">
+			<img class="pic pic1" src="images/动漫/一弦定音 (1).jpg" />
+			<img class="pic pic2" src="images/动漫/一弦定音 (2).jpg"/>
+			<img class="pic pic3" src="images/动漫/一弦定音 (3).jpg"/>
+			<img class="pic pic4" src="images/动漫/一弦定音 (4).jpg" />
+			<img class="pic pic5" src="images/动漫/一弦定音 (5).jpg" />
+			<img class="pic pic6" src="images/动漫/一弦定音 (6).jpg"/>
+			<img class="pic pic7" src="images/动漫/一弦定音 (7).jpg" />
+			<img class="pic pic8" src="images/动漫/一弦定音 (8).jpg"/>
+			<img class="pic pic9" src="images/动漫/一弦定音 (9).jpg"/>
+		</div> 
+	</body>
+	
+</body>
+</html>
